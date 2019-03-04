@@ -1,0 +1,9 @@
+mysql:
+  image: mysql:latest
+  volumes:
+   - /var/lib/mysql
+  environment:
+   - MYSQL_ROOT_PASSWORD=123456
+   - MYSQL_DATABASE=docker
+  ports:
+   - 3316:3306
